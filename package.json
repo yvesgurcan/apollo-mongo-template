@@ -1,0 +1,33 @@
+{
+    "name": "apollo-mongo-template",
+    "version": "0.0.1",
+    "description": "🌿 A template to create an Apollo Server with MongoDB.",
+    "main": "index.js",
+    "scripts": {
+        "start": "concurrently --kill-others \"npm run start:service\" \"npm run start:db\"",
+        "start:service": "nodemon --signal SIGHUP -r esm src",
+        "start:db": "mongod --dbpath=/data",
+        "start:db:quiet": "mongod --dbpath=/data --quiet",
+        "test": "jest",
+        "test:update": "jest --updateSnapshot"
+    },
+    "author": "Yves Gurcan",
+    "license": "MIT",
+    "dependencies": {
+        "apollo-server": "^2.10.1",
+        "axios": "^0.19.2",
+        "concurrently": "^5.1.0",
+        "esm": "^3.2.25",
+        "graphql": "^14.6.0",
+        "mongodb": "^3.5.3",
+        "mongoose": "^5.9.2",
+        "nodemon": "^2.0.2"
+    },
+    "devDependencies": {
+        "@babel/preset-env": "^7.9.0",
+        "apollo-server-testing": "^2.11.0",
+        "babel-jest": "^25.1.0",
+        "jest": "^25.1.0",
+        "mongoose-sequence": "^5.2.2"
+    }
+}

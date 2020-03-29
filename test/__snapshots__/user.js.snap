@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`User: Create a user 1`] = `
+Object {
+  "data": Object {
+    "createUser": Object {
+      "id": "1",
+      "organizationId": "5e7abc6792323e650e6c76e2",
+      "pinCode": "0519",
+      "role": "ADMIN",
+    },
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`User: Fetch user by identifier 1`] = `
+Object {
+  "data": Object {
+    "userById": Object {
+      "id": "1",
+      "organizationId": "5e7abc6792323e650e6c76e2",
+      "pinCode": "7068",
+      "role": "USER",
+    },
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`User: Fetch users 1`] = `
+Object {
+  "data": Object {
+    "users": Array [
+      Object {
+        "id": "1",
+        "organizationId": "5e7abc6792323e650e6c76e2",
+        "pinCode": "7068",
+        "role": "USER",
+      },
+    ],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`User: Update a user 1`] = `
+Object {
+  "data": Object {
+    "updateUser": Object {
+      "id": "1",
+      "organizationId": "5e7abc6792323e650e6c76e2",
+      "pinCode": "7068",
+      "role": "USER",
+    },
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
