@@ -5,6 +5,7 @@
 -   Apollo Server
 -   MongoDB
 -   Mongoose
+-   Jest
 
 ## Setup
 
